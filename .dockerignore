@@ -1,0 +1,10 @@
+.git
+.env
+config/.env
+**/.venv
+**/__pycache__
+**/.python_packages
+application/api
+backups
+logs
+reports

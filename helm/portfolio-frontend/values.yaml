@@ -1,0 +1,38 @@
+replicaCount: 2
+
+image:
+  repository: portfolio-frontend
+  tag: "1.0.0"
+  pullPolicy: Never
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+config:
+  existingConfigMap: portfolio-config
+  APP_NAME: "Aniket Portfolio"
+  APP_ENV: "development"
+  APP_VERSION: "1.0.0"
+  LOG_LEVEL: "info"
+
+secret:
+  existingSecret: portfolio-demo-secret
+  key: DEMO_SECRET
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 250m
+    memory: 128Mi
+
+probes:
+  readiness:
+    initialDelaySeconds: 5
+    periodSeconds: 10
+  liveness:
+    initialDelaySeconds: 10
+    periodSeconds: 20
