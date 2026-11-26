@@ -1,0 +1,79 @@
+name: Kubernetes Platform CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-build:
+    name: Validate Kubernetes, Helm and Docker
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: v4.3.2
+
+      - name: Install Kubeconform
+        run: |
+          curl -sSfL \
+            https://github.com/yannh/kubeconform/releases/download/v0.6.7/kubeconform-linux-amd64.tar.gz \
+            -o /tmp/kubeconform.tar.gz
+          tar -xzf /tmp/kubeconform.tar.gz -C /tmp kubeconform
+          sudo install /tmp/kubeconform /usr/local/bin/kubeconform
+
+      - name: Validate Kubernetes manifests
+        run: |
+          kubeconform -strict -summary \
+            -kubernetes-version 1.37.0 \
+            kubernetes/namespace.yaml \
+            kubernetes/frontend-deployment.yaml \
+            kubernetes/frontend-service.yaml \
+            kubernetes/config/portfolio-configmap.yaml
+
+      - name: Lint Helm chart
+        run: |
+          helm lint helm/portfolio-frontend
+
+      - name: Render and validate Helm templates
+        run: |
+          helm template portfolio-frontend \
+            helm/portfolio-frontend \
+            --namespace portfolio \
+            > /tmp/portfolio-rendered.yaml
+
+          kubeconform -strict -summary \
+            -kubernetes-version 1.37.0 \
+            /tmp/portfolio-rendered.yaml
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -f docker/frontend/Dockerfile \
+            -t portfolio-frontend:${GITHUB_SHA} \
+            .
+
+      - name: Package Helm chart
+        run: |
+          mkdir -p dist
+          helm package helm/portfolio-frontend \
+            --destination dist
+
+      - name: Upload Helm chart artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-frontend-helm-chart
+          path: dist/*.tgz
+          retention-days: 14
