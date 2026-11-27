@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  packages: write
 
 jobs:
   validate-and-build:
@@ -71,7 +72,7 @@ jobs:
           image-ref: portfolio-frontend:${{ github.sha }}
           format: table
           output: trivy-image-report.txt
-          exit-code: '0'
+          exit-code: "0"
           ignore-unfixed: true
           vuln-type: os,library
           severity: HIGH,CRITICAL
@@ -84,6 +85,25 @@ jobs:
           path: trivy-image-report.txt
           if-no-files-found: ignore
           retention-days: 14
+      - name: Log in to GitHub Container Registry
+        if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish Docker image to GHCR
+        if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+        env:
+          IMAGE_NAME: ghcr.io/712aniket/production-style-kubernetes-platform
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker tag portfolio-frontend:${IMAGE_TAG} ${IMAGE_NAME}:${IMAGE_TAG}
+          docker tag portfolio-frontend:${IMAGE_TAG} ${IMAGE_NAME}:latest
+
+          docker push ${IMAGE_NAME}:${IMAGE_TAG}
+          docker push ${IMAGE_NAME}:latest
 
       - name: Package Helm chart
         run: |
