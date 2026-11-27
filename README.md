@@ -97,3 +97,42 @@ kubectl get hpa -n portfolio
 ## Important
 
 This project uses Azure resources that may incur charges. Stop the AKS cluster when it is not needed, while remembering that attached disks, public IP addresses and load balancers may continue to incur costs.
+
+## Automated CI/CD and GitOps Deployment
+
+The project implements an automated CI/CD and GitOps deployment pipeline using GitHub Actions, GitHub Container Registry (GHCR), Argo CD and Azure Kubernetes Service (AKS).
+
+### Deployment Workflow
+
+1. GitHub Actions validates Kubernetes manifests and Helm charts.
+2. Docker builds the application image.
+3. Trivy scans the image for HIGH and CRITICAL vulnerabilities.
+4. The image is published to GHCR with a commit-SHA tag.
+5. GitHub Actions automatically updates the Helm GitOps image tag.
+6. Argo CD detects the Git change and synchronizes the application to AKS.
+7. Kubernetes maintains the desired application state.
+
+### Security and Access
+
+- GitHub Actions uses scoped GitHub token permissions.
+- Azure OIDC integration has been configured and tested.
+- AKS uses Microsoft Entra authentication and Azure RBAC.
+- Trivy vulnerability scanning is integrated into CI.
+- Argo CD automated synchronization and self-healing are enabled.
+
+**Important:** Trivy currently reports vulnerabilities without blocking the pipeline. Additional security hardening and verification remain planned.
+
+### Current Deployment Status
+
+- GitHub Actions CI: Successful.
+- GHCR image publishing: Successful.
+- Automated GitOps image update: Successful.
+- Argo CD: Synced and Healthy.
+- AKS application pods: 2/2 Running and Ready.
+- Deployed image SHA: Matches the GitOps configuration.
+
+See [Project 3 Operational Runbook](docs/PROJECT3-RUNBOOK.md) for deployment, troubleshooting, rollback and operational procedures.
+
+## Cost Considerations
+
+This project uses Azure resources that may incur charges. Review AKS, monitoring, disks, networking and other retained resources before stopping or deleting infrastructure.

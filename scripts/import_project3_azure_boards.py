@@ -75,9 +75,9 @@ def load_catalogue():
     if not isinstance(items, list):
         raise SystemExit("Catalogue must contain an 'items' array.")
 
-    expected = {"Epic": 12, "Feature": 40, "User Story": 80, "Task": 160}
+    expected = {"Epic": 12, "Feature": 40, "User Story": 84, "Task": 168}
     counts = Counter(x.get("type") for x in items)
-    if len(items) != 292 or dict(counts) != expected:
+    if len(items) != 304 or dict(counts) != expected:
         raise SystemExit(f"Unexpected catalogue counts: {dict(counts)}; expected {expected}.")
 
     # Validate unique (type,title), parent existence, and parent-first ordering.
@@ -197,7 +197,7 @@ def main():
     print(f"Project      : {AZDO_PROJECT}")
     print(f"Catalogue    : {CATALOG}")
     print(f"Hierarchy    : {data.get('hierarchy')}")
-    print("Catalogue validation: PASS (12 Epics, 40 Features, 80 User Stories, 160 Tasks = 292)")
+    print("Catalogue validation: PASS (12 Epics, 40 Features, 84 User Stories, 168 Tasks = 304)")
     existing = get_existing_items()
     print(f"Existing matching Project3 items: {len(existing)}")
 
@@ -261,14 +261,14 @@ def main():
         for error in errors:
             print("  " + error)
         return 3
-    expected = {"Epic": 12, "Feature": 40, "User Story": 80, "Task": 160}
+    expected = {"Epic": 12, "Feature": 40, "User Story": 84, "Task": 168}
     if dict(final_counts) != expected:
         print(f"Count mismatch: {dict(final_counts)}")
         return 3
     print("VERIFICATION SUCCESSFUL:")
     for kind in ("Epic", "Feature", "User Story", "Task"):
         print(f"  {kind}: {final_counts[kind]}")
-    print("  TOTAL: 292")
+    print("  TOTAL: 304")
     return 0
 
 

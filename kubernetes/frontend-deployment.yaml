@@ -22,12 +22,6 @@ spec:
           envFrom:
             - configMapRef:
                 name: portfolio-config
-          env:
-            - name: DEMO_SECRET
-              valueFrom:
-                secretKeyRef:
-                  name: portfolio-demo-secret
-                  key: DEMO_SECRET
           resources:
             requests:
               cpu: 50m

@@ -8,7 +8,7 @@ image:
 service:
   type: ClusterIP
   port: 80
-  targetPort: 80
+  targetPort: 8080
 
 config:
   existingConfigMap: portfolio-config
@@ -16,10 +16,6 @@ config:
   APP_ENV: "development"
   APP_VERSION: "1.0.0"
   LOG_LEVEL: "info"
-
-secret:
-  existingSecret: portfolio-demo-secret
-  key: DEMO_SECRET
 
 resources:
   requests:
