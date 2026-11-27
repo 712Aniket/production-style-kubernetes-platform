@@ -1,0 +1,51 @@
+===== PROJECT 3: CONTROLLED LOAD TEST RESULTS =====
+Fri Nov 27 18:35:53 UTC 2026
+
+===== LOAD GENERATOR LOGS =====
+HTTP load test completed
+
+===== HPA STATUS =====
+NAME                 REFERENCE                       TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+portfolio-frontend   Deployment/portfolio-frontend   cpu: 6%/60%   2         5         2          36m
+
+Name:                                                  portfolio-frontend
+Namespace:                                             portfolio
+Labels:                                                app.kubernetes.io/instance=portfolio-frontend
+                                                       app.kubernetes.io/managed-by=Helm
+                                                       app.kubernetes.io/name=portfolio-frontend
+                                                       app.kubernetes.io/version=1.0.0
+                                                       helm.sh/chart=portfolio-frontend-0.1.0
+Annotations:                                           meta.helm.sh/release-name: portfolio-frontend
+                                                       meta.helm.sh/release-namespace: portfolio
+CreationTimestamp:                                     Fri, 27 Nov 2026 17:59:18 +0000
+Reference:                                             Deployment/portfolio-frontend
+Metrics:                                               ( current / target )
+  resource cpu on pods  (as a percentage of request):  6% (3m) / 60%
+Min replicas:                                          2
+Max replicas:                                          5
+Deployment pods:                                       2 current / 2 desired
+Conditions:
+  Type            Status  Reason            Message
+  ----            ------  ------            -------
+  AbleToScale     True    ReadyForNewScale  recommended size matches current size
+  ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
+Events:
+  Type    Reason             Age   From                       Message
+  ----    ------             ----  ----                       -------
+  Normal  SuccessfulRescale  36m   horizontal-pod-autoscaler  New size: 2; reason: Current number of replicas below Spec.MinReplicas
+
+===== FRONTEND DEPLOYMENT =====
+NAME                 READY   UP-TO-DATE   AVAILABLE   AGE
+portfolio-frontend   2/2     2            2           6h24m
+
+===== FRONTEND PODS =====
+NAME                                  READY   STATUS      RESTARTS   AGE     IP             NODE                                NOMINATED NODE   READINESS GATES
+frontend-load-generator               0/1     Completed   0          2m38s   10.244.0.8     aks-nodepool1-42908722-vmss000000   <none>           <none>
+portfolio-frontend-5b6b969c88-rgq5k   1/1     Running     0          36m     10.244.0.187   aks-nodepool1-42908722-vmss000000   <none>           <none>
+portfolio-frontend-5b6b969c88-thmlq   1/1     Running     0          6h24m   10.244.0.152   aks-nodepool1-42908722-vmss000000   <none>           <none>
+
+===== RESOURCE USAGE =====
+NAME                                  CPU(cores)   MEMORY(bytes)
+portfolio-frontend-5b6b969c88-rgq5k   3m           3Mi
+portfolio-frontend-5b6b969c88-thmlq   3m           3Mi

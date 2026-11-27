@@ -1,0 +1,7 @@
+NAME                                                     REFERENCE                       TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/portfolio-frontend   Deployment/portfolio-frontend   cpu: 2%/60%   2         5         2          37m
+
+NAME                                      READY   STATUS      RESTARTS   AGE
+pod/frontend-load-generator               0/1     Completed   0          3m54s
+pod/portfolio-frontend-5b6b969c88-rgq5k   1/1     Running     0          37m
+pod/portfolio-frontend-5b6b969c88-thmlq   1/1     Running     0          6h26m

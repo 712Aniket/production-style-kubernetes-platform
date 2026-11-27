@@ -1,0 +1,4 @@
+image:
+  repository: ghcr.io/712aniket/production-style-kubernetes-platform
+  tag: "8d7331d6d8861cf77542f451f4ec72febafcb4e2"
+  pullPolicy: IfNotPresent

@@ -1,0 +1,12 @@
+scrapeConfigs:
+  kubernetes-api-servers:
+    enabled: false
+
+  kubernetes-api-server-static:
+    bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+    static_configs:
+      - targets:
+          - kubernetes.default.svc:443
+    scheme: https
+    tls_config:
+      ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt

@@ -35,3 +35,24 @@ get_helm.sh
 # Local Azure DevOps project configuration and imported work items
 config/*.json
 exports/
+
+# Terraform state and sensitive configuration
+terraform/.terraform/
+*.tfplan
+
+# Terraform local state, plans and sensitive variable files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+crash.log
+crash.*.log
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Temporary backups
+*.bak
