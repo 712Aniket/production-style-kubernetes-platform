@@ -1,0 +1,33 @@
+===== AKS NODES =====
+NAME                                STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION             CONTAINER-RUNTIME
+aks-nodepool1-42908722-vmss000000   Ready    <none>   16m   v1.36.5   10.224.0.4    <none>        Ubuntu 24.04.5 LTS   6.8.0-1073-azure (amd64)   containerd://2.3.7-4
+
+===== APPLICATION PODS =====
+NAME                                  READY   STATUS    RESTARTS   AGE   IP             NODE                                NOMINATED NODE   READINESS GATES
+portfolio-frontend-5b6b969c88-9lcmz   1/1     Running   0          12m   10.244.0.120   aks-nodepool1-42908722-vmss000000   <none>           <none>
+portfolio-frontend-5b6b969c88-thmlq   1/1     Running   0          12m   10.244.0.152   aks-nodepool1-42908722-vmss000000   <none>           <none>
+
+===== SERVICES =====
+NAME                 TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
+portfolio-frontend   ClusterIP   10.0.122.35   <none>        80/TCP    12m
+
+===== HELM RELEASE =====
+NAME              	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART                   	APP VERSION
+portfolio-frontend	portfolio	2       	2026-11-27 12:22:17.582854487 +0000 UTC	deployed	portfolio-frontend-0.1.0	1.0.0      
+
+===== HELM HISTORY =====
+REVISION	UPDATED                 	STATUS    	CHART                   	APP VERSION	DESCRIPTION                                                                                                                                 
+1       	Fri Nov 27 12:11:07 2026	superseded	portfolio-frontend-0.1.0	1.0.0      	Release "portfolio-frontend" failed: resource Deployment/portfolio/portfolio-frontend not ready. status: InProgress, message: Available: ...
+2       	Fri Nov 27 12:22:17 2026	deployed  	portfolio-frontend-0.1.0	1.0.0      	Upgrade complete                                                                                                                            
+
+===== HELM TEST =====
+NAME: portfolio-frontend
+LAST DEPLOYED: Fri Nov 27 12:22:17 2026
+NAMESPACE: portfolio
+STATUS: deployed
+REVISION: 2
+DESCRIPTION: Upgrade complete
+TEST SUITE:     portfolio-frontend-test-connection
+Last Started:   Fri Nov 27 12:23:23 2026
+Last Completed: Fri Nov 27 12:23:25 2026
+Phase:          Succeeded
