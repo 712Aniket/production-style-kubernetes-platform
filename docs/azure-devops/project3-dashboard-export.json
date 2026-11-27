@@ -1,0 +1,481 @@
+{
+  "exported_at_utc": "2026-11-27T16:34:01.381517+00:00",
+  "organization": "712aniket",
+  "project": "Kubernetes-Platform-Engineering",
+  "team_id": "81f28f78-bdf4-496c-acae-b786bb17a5b8",
+  "dashboard": {
+    "id": "f88a4a50-5ab9-4270-b8c9-5d7dd85219da",
+    "name": "Project 3 - Kubernetes Platform",
+    "refreshInterval": 0,
+    "position": 2,
+    "eTag": "25",
+    "widgets": [
+      {
+        "id": "cd4c9732-6245-4ca6-adca-35f1eabc620f",
+        "eTag": "2",
+        "name": "Closed Work Items",
+        "position": {
+          "row": 2,
+          "column": 2
+        },
+        "size": {
+          "rowSpan": 1,
+          "columnSpan": 1
+        },
+        "settings": "{\"queryId\": \"9dd250f7-d1c4-4def-9cb3-7df03fee1202\", \"queryName\": \"Closed Work Items\"}",
+        "settingsVersion": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        },
+        "artifactId": "",
+        "url": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/cd4c9732-6245-4ca6-adca-35f1eabc620f",
+        "_links": {
+          "self": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/cd4c9732-6245-4ca6-adca-35f1eabc620f"
+          },
+          "group": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets"
+          },
+          "dashboard": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da"
+          }
+        },
+        "isEnabled": true,
+        "contentUri": null,
+        "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "isNameConfigurable": true,
+        "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+      },
+      {
+        "id": "04891a48-f4c3-4895-be4f-43a77b3e01db",
+        "eTag": "1",
+        "name": "Project3 - Features",
+        "position": {
+          "row": 1,
+          "column": 3
+        },
+        "size": {
+          "rowSpan": 2,
+          "columnSpan": 3
+        },
+        "settings": "{\"query\":{\"queryId\":\"4bc55a23-0e25-4529-87b9-da2ea251864f\",\"queryName\":\"Project3 - Features\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"State\",\"referenceName\":\"System.State\"}],\"lastArtifactName\":\"Project3 - Features\"}",
+        "settingsVersion": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        },
+        "artifactId": "",
+        "url": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/04891a48-f4c3-4895-be4f-43a77b3e01db",
+        "_links": {
+          "self": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/04891a48-f4c3-4895-be4f-43a77b3e01db"
+          },
+          "group": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets"
+          },
+          "dashboard": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da"
+          }
+        },
+        "isEnabled": true,
+        "contentUri": null,
+        "contributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+        "typeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+        "configurationContributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+        "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+        "isNameConfigurable": true,
+        "loadingImageUrl": "https://dev.azure.com/712aniket/_static/MyWork/queryResultsLoading.png",
+        "lightboxOptions": {
+          "width": 900,
+          "height": 700,
+          "resizable": true
+        }
+      },
+      {
+        "id": "5f6fb706-4253-436a-aa83-788229cb21b1",
+        "eTag": "1",
+        "name": "Active Work Items",
+        "position": {
+          "row": 1,
+          "column": 1
+        },
+        "size": {
+          "rowSpan": 1,
+          "columnSpan": 1
+        },
+        "settings": "{\"queryId\": \"6818cc05-7889-4d8f-a63a-e31782b56ee6\", \"queryName\": \"Active Work Items\"}",
+        "settingsVersion": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        },
+        "artifactId": "",
+        "url": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/5f6fb706-4253-436a-aa83-788229cb21b1",
+        "_links": {
+          "self": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/5f6fb706-4253-436a-aa83-788229cb21b1"
+          },
+          "group": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets"
+          },
+          "dashboard": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da"
+          }
+        },
+        "isEnabled": true,
+        "contentUri": null,
+        "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "isNameConfigurable": true,
+        "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+      },
+      {
+        "id": "f3945ab9-7830-400e-a418-9a54171fadf8",
+        "eTag": "4",
+        "name": "Active Work Items",
+        "position": {
+          "row": 2,
+          "column": 1
+        },
+        "size": {
+          "rowSpan": 1,
+          "columnSpan": 1
+        },
+        "settings": "{\"queryId\": \"6818cc05-7889-4d8f-a63a-e31782b56ee6\", \"queryName\": \"Active Work Items\"}",
+        "settingsVersion": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        },
+        "artifactId": "",
+        "url": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/f3945ab9-7830-400e-a418-9a54171fadf8",
+        "_links": {
+          "self": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/f3945ab9-7830-400e-a418-9a54171fadf8"
+          },
+          "group": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets"
+          },
+          "dashboard": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da"
+          }
+        },
+        "isEnabled": true,
+        "contentUri": null,
+        "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "isNameConfigurable": true,
+        "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+      },
+      {
+        "id": "f2aca80e-984d-450f-8e32-e435d434384a",
+        "eTag": "1",
+        "name": "Project3 - Epics",
+        "position": {
+          "row": 1,
+          "column": 6
+        },
+        "size": {
+          "rowSpan": 2,
+          "columnSpan": 3
+        },
+        "settings": "{\"query\":{\"queryId\":\"11229d7a-e67a-42d6-818a-e00a5172eac8\",\"queryName\":\"Project3 - Epics\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"State\",\"referenceName\":\"System.State\"}],\"lastArtifactName\":\"Project3 - Epics\"}",
+        "settingsVersion": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        },
+        "artifactId": "",
+        "url": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/f2aca80e-984d-450f-8e32-e435d434384a",
+        "_links": {
+          "self": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/f2aca80e-984d-450f-8e32-e435d434384a"
+          },
+          "group": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets"
+          },
+          "dashboard": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da"
+          }
+        },
+        "isEnabled": true,
+        "contentUri": null,
+        "contributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+        "typeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+        "configurationContributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+        "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+        "isNameConfigurable": true,
+        "loadingImageUrl": "https://dev.azure.com/712aniket/_static/MyWork/queryResultsLoading.png",
+        "lightboxOptions": {
+          "width": 900,
+          "height": 700,
+          "resizable": true
+        }
+      },
+      {
+        "id": "b8fc66b0-2934-4883-b1f8-fdd3b9599c1a",
+        "eTag": "1",
+        "name": "New Work Items",
+        "position": {
+          "row": 1,
+          "column": 2
+        },
+        "size": {
+          "rowSpan": 1,
+          "columnSpan": 1
+        },
+        "settings": "{\"queryId\": \"ae7e5410-da73-468e-aeea-34007d7a6c35\", \"queryName\": \"New Work Items\"}",
+        "settingsVersion": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        },
+        "artifactId": "",
+        "url": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/b8fc66b0-2934-4883-b1f8-fdd3b9599c1a",
+        "_links": {
+          "self": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/b8fc66b0-2934-4883-b1f8-fdd3b9599c1a"
+          },
+          "group": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets"
+          },
+          "dashboard": {
+            "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da"
+          }
+        },
+        "isEnabled": true,
+        "contentUri": null,
+        "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+        "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+        "isNameConfigurable": true,
+        "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+      }
+    ],
+    "groupId": "81f28f78-bdf4-496c-acae-b786bb17a5b8",
+    "ownerId": "81f28f78-bdf4-496c-acae-b786bb17a5b8",
+    "dashboardScope": "project_Team",
+    "modifiedDate": "2026-11-27T16:31:45.73Z",
+    "modifiedBy": "84e57200-34b7-686f-80f8-1612872096b4",
+    "lastAccessedDate": "2026-11-27T00:00:00Z",
+    "globalParametersConfig": null,
+    "url": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da",
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da"
+      },
+      "group": {
+        "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/Dashboards"
+      },
+      "widget": [
+        {
+          "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/cd4c9732-6245-4ca6-adca-35f1eabc620f"
+        },
+        {
+          "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/04891a48-f4c3-4895-be4f-43a77b3e01db"
+        },
+        {
+          "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/5f6fb706-4253-436a-aa83-788229cb21b1"
+        },
+        {
+          "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/f3945ab9-7830-400e-a418-9a54171fadf8"
+        },
+        {
+          "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/f2aca80e-984d-450f-8e32-e435d434384a"
+        },
+        {
+          "href": "https://dev.azure.com/712aniket/Kubernetes-Platform-Engineering/81f28f78-bdf4-496c-acae-b786bb17a5b8/_apis/Dashboard/dashboards/f88a4a50-5ab9-4270-b8c9-5d7dd85219da/Widgets/b8fc66b0-2934-4883-b1f8-fdd3b9599c1a"
+        }
+      ]
+    }
+  },
+  "widgets": [
+    {
+      "id": "cd4c9732-6245-4ca6-adca-35f1eabc620f",
+      "eTag": "2",
+      "name": "Closed Work Items",
+      "position": {
+        "row": 2,
+        "column": 2
+      },
+      "size": {
+        "rowSpan": 1,
+        "columnSpan": 1
+      },
+      "settings": "{\"queryId\": \"9dd250f7-d1c4-4def-9cb3-7df03fee1202\", \"queryName\": \"Closed Work Items\"}",
+      "settingsVersion": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+      },
+      "artifactId": "",
+      "isEnabled": true,
+      "contentUri": null,
+      "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "isNameConfigurable": true,
+      "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+    },
+    {
+      "id": "04891a48-f4c3-4895-be4f-43a77b3e01db",
+      "eTag": "1",
+      "name": "Project3 - Features",
+      "position": {
+        "row": 1,
+        "column": 3
+      },
+      "size": {
+        "rowSpan": 2,
+        "columnSpan": 3
+      },
+      "settings": "{\"query\":{\"queryId\":\"4bc55a23-0e25-4529-87b9-da2ea251864f\",\"queryName\":\"Project3 - Features\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"State\",\"referenceName\":\"System.State\"}],\"lastArtifactName\":\"Project3 - Features\"}",
+      "settingsVersion": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+      },
+      "artifactId": "",
+      "isEnabled": true,
+      "contentUri": null,
+      "contributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+      "typeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+      "configurationContributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+      "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+      "isNameConfigurable": true,
+      "loadingImageUrl": "https://dev.azure.com/712aniket/_static/MyWork/queryResultsLoading.png",
+      "lightboxOptions": {
+        "width": 900,
+        "height": 700,
+        "resizable": true
+      }
+    },
+    {
+      "id": "5f6fb706-4253-436a-aa83-788229cb21b1",
+      "eTag": "1",
+      "name": "Active Work Items",
+      "position": {
+        "row": 1,
+        "column": 1
+      },
+      "size": {
+        "rowSpan": 1,
+        "columnSpan": 1
+      },
+      "settings": "{\"queryId\": \"6818cc05-7889-4d8f-a63a-e31782b56ee6\", \"queryName\": \"Active Work Items\"}",
+      "settingsVersion": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+      },
+      "artifactId": "",
+      "isEnabled": true,
+      "contentUri": null,
+      "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "isNameConfigurable": true,
+      "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+    },
+    {
+      "id": "f3945ab9-7830-400e-a418-9a54171fadf8",
+      "eTag": "4",
+      "name": "Active Work Items",
+      "position": {
+        "row": 2,
+        "column": 1
+      },
+      "size": {
+        "rowSpan": 1,
+        "columnSpan": 1
+      },
+      "settings": "{\"queryId\": \"6818cc05-7889-4d8f-a63a-e31782b56ee6\", \"queryName\": \"Active Work Items\"}",
+      "settingsVersion": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+      },
+      "artifactId": "",
+      "isEnabled": true,
+      "contentUri": null,
+      "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "isNameConfigurable": true,
+      "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+    },
+    {
+      "id": "f2aca80e-984d-450f-8e32-e435d434384a",
+      "eTag": "1",
+      "name": "Project3 - Epics",
+      "position": {
+        "row": 1,
+        "column": 6
+      },
+      "size": {
+        "rowSpan": 2,
+        "columnSpan": 3
+      },
+      "settings": "{\"query\":{\"queryId\":\"11229d7a-e67a-42d6-818a-e00a5172eac8\",\"queryName\":\"Project3 - Epics\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"State\",\"referenceName\":\"System.State\"}],\"lastArtifactName\":\"Project3 - Epics\"}",
+      "settingsVersion": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+      },
+      "artifactId": "",
+      "isEnabled": true,
+      "contentUri": null,
+      "contributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+      "typeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+      "configurationContributionId": "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+      "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+      "isNameConfigurable": true,
+      "loadingImageUrl": "https://dev.azure.com/712aniket/_static/MyWork/queryResultsLoading.png",
+      "lightboxOptions": {
+        "width": 900,
+        "height": 700,
+        "resizable": true
+      }
+    },
+    {
+      "id": "b8fc66b0-2934-4883-b1f8-fdd3b9599c1a",
+      "eTag": "1",
+      "name": "New Work Items",
+      "position": {
+        "row": 1,
+        "column": 2
+      },
+      "size": {
+        "rowSpan": 1,
+        "columnSpan": 1
+      },
+      "settings": "{\"queryId\": \"ae7e5410-da73-468e-aeea-34007d7a6c35\", \"queryName\": \"New Work Items\"}",
+      "settingsVersion": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+      },
+      "artifactId": "",
+      "isEnabled": true,
+      "contentUri": null,
+      "contributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "typeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+      "configurationContributionId": "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "configurationContributionRelativeId": "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+      "isNameConfigurable": true,
+      "loadingImageUrl": "https://dev.azure.com/712aniket/_static/Widgets/scalarLoading.png"
+    }
+  ]
+}
